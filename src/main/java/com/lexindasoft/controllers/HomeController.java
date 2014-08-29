@@ -18,9 +18,9 @@ public class HomeController {
 	@Autowired
 	TestService testService;
 	
-	@PriCheckRequired
+	
     @Get("")
-    public String login(Invocation inv,Model model) {
+    public String interceptorAction(Invocation inv,Model model) {
     	logger.info("123------------");
     	HttpSession session = inv.getRequest().getSession();
     	session.setAttribute("user_name", "admin");
@@ -28,6 +28,7 @@ public class HomeController {
         return "@this is a access track interceptor";
     }
     
+    @CheckRequired
     @Get("/index")
     public String index() {
     	logger.info("123------------");
