@@ -18,6 +18,8 @@ public class AccessTrackInterceptor extends ControllerInterceptorAdapter {
     @Override
     public Object before(Invocation inv) throws Exception {
         // TODO ....
+    	
+    	System.out.println("==================before==============");
         return super.before(inv);
     }
 
