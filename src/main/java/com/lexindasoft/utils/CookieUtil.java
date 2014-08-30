@@ -7,18 +7,17 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Cookie相关
  * 
  * @author MuZongyan
  * 
  */
 public class CookieUtil {
 
-    // �?��
+
     public static final int AGE_DAY = 86400;
-    // �?���?
+
     public static final int AGE_MONTH = AGE_DAY*30;
-    // 十分�?
+
     public static final int AGE_TEN_MIN = 600;
 
     public static final String NAME_USERID = "pep_userid";
@@ -30,15 +29,11 @@ public class CookieUtil {
     //public static final String VIRTUAL_TOKEN = "";
 
     /**
-     * 设置cookie
      * 
      * @param response
      * @param name
-     *            cookie名字
      * @param value
-     *            cookie�?
      * @param maxAge
-     *            cookie生命周期 以秒为单�?
      */
     public static void addCookie(HttpServletResponse response, String name,
             String value, int maxAge) {
@@ -51,11 +46,9 @@ public class CookieUtil {
     }
 
     /**
-     * 根据名字获取cookie
      * 
      * @param request
      * @param name
-     *            cookie名字
      * @return
      */
     public static Cookie getCookieByName(HttpServletRequest request, String name) {
@@ -69,7 +62,6 @@ public class CookieUtil {
     }
 
     /**
-     * 将cookie封装到Map里面
      * 
      * @param request
      * @return

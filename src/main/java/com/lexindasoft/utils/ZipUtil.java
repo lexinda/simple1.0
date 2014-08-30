@@ -45,7 +45,7 @@ public class ZipUtil {
 	public void compress(String srcPathName) {
 		File file = new File(srcPathName);
 		if (!file.exists())
-			throw new RuntimeException(srcPathName + "文件不存在！");
+			throw new RuntimeException(srcPathName + "file not found!");
 		try {
 
 			String basedir = "";

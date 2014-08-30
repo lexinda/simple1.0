@@ -10,7 +10,7 @@ public class Md5Util {
         'a', 'b', 'c', 'd', 'e', 'f' };
 
     /**
-     * 获取计算MD5的�?
+     * getMD5
      * 
      * @param baseToken
      * @return

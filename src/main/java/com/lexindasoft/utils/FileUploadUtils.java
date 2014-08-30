@@ -35,11 +35,11 @@ public class FileUploadUtils {
 			String path = getFilePath(rootDir, filePrefix, extension);
 			in = multipartFile.getInputStream();
 			
-			FileOutputStream f = new FileOutputStream(path);//创建文件输出�?
-			byte [] bb=new byte[1024];  //接收缓存
+			FileOutputStream f = new FileOutputStream(path);
+			byte [] bb=new byte[1024];
 			int len;
-			while( (len=in.read(bb))>0){ //接收
-			  f.write(bb, 0, len);  //写入文件
+			while( (len=in.read(bb))>0){
+			  f.write(bb, 0, len);
 			}
 			f.close();
 			in.close();
@@ -67,7 +67,6 @@ public class FileUploadUtils {
 	}
 	
 	/**
-	 * 是否有效的图片格�?
 	 * @param file
 	 * @return
 	 */

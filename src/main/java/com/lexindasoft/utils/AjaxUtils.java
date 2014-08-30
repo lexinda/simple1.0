@@ -27,6 +27,6 @@ public class AjaxUtils {
 	}
 	
 	public static String printErrorJson(String message, HttpServletRequest req,HttpServletResponse resp){
-		return printJson(-1, message,req,resp);//-1表�?用的error
+		return printJson(-1, message,req,resp);
 	}
 }
